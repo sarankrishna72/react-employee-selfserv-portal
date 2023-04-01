@@ -1,0 +1,24 @@
+.timeline-icon {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: calc(50% + 35px);
+        left: calc(50% - 1px);
+        right: auto;
+        height: 150%;
+        border: 1px solid var(--base-bg-color);
+        background-color: var(--base-bg-color);
+    }
+   
+}
+
+.single-record  {
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    border-radius: 0.25rem;
+    background-color: var(--base-bg-color);
+}

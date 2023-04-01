@@ -1,0 +1,37 @@
+
+.page-filter {
+    cursor: pointer;
+    transition: all 0.5s;
+    .filter-container {
+        box-shadow: var(--default-box-shadow);
+        border: 1px solid #ced4da;
+        
+    }
+
+    &:hover {
+        .filter-data-container {
+            display: block !important;
+        }
+
+    }
+
+    .filter-data-container {
+        box-shadow: var(--default-box-shadow);
+        border: 1px solid #ced4da;
+        .filter-item {
+            cursor: pointer;
+            margin-bottom: 0;
+            display: block;
+            &:hover {
+                color: var(--primary-color);
+                background-color: var(--base-bg-color);
+            }
+        }
+    }
+
+    .checkedItems {
+        color: var(--primary-color);
+        background-color: var(--base-bg-color);
+    }
+   
+}

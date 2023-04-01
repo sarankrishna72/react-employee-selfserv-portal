@@ -1,0 +1,46 @@
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.progress {
+    &.animate-progress {
+      .progress-bar {
+        animation-name: animateProgressBar;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+      }
+    }
+}
+
+@keyframes animateProgressBar {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.progress.animate-progress .progress-bar {
+    animation-name: animateProgressBar;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    transition: width .6s ease;
+}

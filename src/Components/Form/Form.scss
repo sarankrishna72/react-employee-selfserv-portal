@@ -1,0 +1,150 @@
+.form-group-with-icon {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    padding: 0 14px;
+    color: #bcbec2;
+    transition: all .25s ease-in-out;
+    &:hover {
+        filter: invert(51%) sepia(20%) saturate(6611%) hue-rotate(135deg) brightness(95%) contrast(103%) !important;
+    }
+}
+
+.c-input {
+    background-color: var(--color-white);
+    color: var(--primary-font-color);
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    vertical-align: middle;
+    border: 1px solid #ced4da;
+    -moz-appearance: none;
+    appearance: none;
+    height: auto;
+    font-size: .9rem;
+    border-radius: 5px;
+    padding: 10px 14px;
+    outline: 0px ;
+    &:focus {
+        box-shadow: none!important;
+        border-color: var(--primary-color) !important;
+        
+    }
+}
+
+.custom-select {
+    @extend .c-input;
+    background: url("https://payday.gainhq.com/images/chevron-down.svg") no-repeat right 0.75rem center/8px 10px;
+    background-repeat: no-repeat!important;
+    background-size: 15px!important;
+    background-position-x: 97%!important;
+    background-position-y: 50%!important;
+    &:disabled{
+        background-color: var(--bg-input-readonly) !important;
+        pointer-events: none !important;
+    }
+
+    
+}
+
+.custom-input {
+    @extend .c-input;
+    &:disabled, &:read-only{
+        background-color: var(--bg-input-readonly) !important;
+        pointer-events: none !important;
+        border-color: var(--bg-input-readonly) !important;
+    }
+    
+}
+
+
+
+.customized-checkbox input,
+.customized-radio input {
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--primary-font-color)!important;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.customized-checkbox input+label,
+.customized-radio input+label {
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.customized-checkbox input+label:before,
+.customized-radio input+label:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 0.18rem;
+}
+
+.customized-radio input+label:before {
+    border-radius: 50% !important;
+}
+
+.customized-checkbox.checkbox-default input+label:before,
+.customized-radio.radio-default input+label:before {
+    border-color: #adb5bd;
+}
+
+.customized-checkbox.checkbox-default input:checked+label:before,
+.customized-radio.radio-default input:checked+label:before {
+    border-color: var(--primary-color);
+}
+
+.customized-checkbox input:checked+label:after{
+    content: "";
+    position: absolute;
+    left: 4.5px;
+    top: 9px;
+    width: 2.45px;
+    height: 2.45px;
+    transform: rotate(45deg);
+}
+
+.customized-radio input:checked+label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.customized-checkbox.checkbox-default input:checked+label:after{
+    background: var(--primary-color);
+    box-shadow: 2px 0 0 var(--primary-color), 4px 0 0 var(--primary-color), 4px -2px 0 var(--primary-color), 4px -4px 0 var(--primary-color), 4px -6px 0 var(--primary-color), 4px -8px 0 var(--primary-color);
+}
+
+textarea[data-input-error="true"],
+input[data-input-error="true"],
+select[data-input-error="true"] {
+    border: solid 1px var(--error-color);
+}
+
+.help-block {
+    color: var(--error-color);
+    font-size: 13px;
+}

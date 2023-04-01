@@ -1,0 +1,51 @@
+
+
+.calender-button-group {
+    border: 1px solid var(--primary-color);
+}
+
+.calender-month {
+    color: var(--primary-color);   
+}
+
+.calender-action-divider {
+    border-left: 1px solid var(--primary-color);
+}
+
+.calender-weekends {
+    border: 1px solid #E8EEF3;
+}
+
+.day-name, .calander-day  {
+    border: 1px solid #E8EEF3;
+    color: #787d88;
+    font-weight: 500;
+}
+
+.calander-day {
+    text-align: right;
+}
+.calander-event-item {
+    overflow: hidden;
+}
+
+.calander-days {
+    border-left: 1px solid #E8EEF3;
+    border-right: 1px solid #E8EEF3;
+    border-bottom: 1px solid #E8EEF3;
+}
+
+.calender-today {
+    background-color: #f2f4f7;;
+    // color: var(--color-white);
+}
+
+.calender-previous-month {
+    opacity: .5;
+    color: #787d885e;
+    pointer-events: none;
+}
+
+.calander-event-item {
+    background-color: var(--calender-event-bg-color);
+}

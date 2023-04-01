@@ -1,0 +1,39 @@
+.badge.badge-pill {
+    border-radius: 20px;
+}
+
+.badge-success {
+    color: var(--color-white);
+    background-color: var(--success-color);
+}
+
+.badge-warning {
+    color: var(--color-white);
+    background-color: var(--warning-color);
+}
+
+.badge-error {
+    color: var(--color-white);
+    background-color: var(--error-color);
+}
+
+.badge-info {
+    color: var(--color-white);
+    background-color: var(--info-color);
+}
+
+
+
+.badge {
+    color: var(--color-white);
+    font-size: 12px;
+    padding: 0.55rem 1.2rem;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: initial;
+    font-weight: 600;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

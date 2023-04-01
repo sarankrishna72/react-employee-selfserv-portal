@@ -1,0 +1,50 @@
+.zoom:hover {
+    transform: scale(1);
+    overflow: hidden;
+}
+.zoom {
+    transition: transform 1s;
+    transform: scale(1);
+    overflow: hidden;
+}
+
+.custom-box-shadow {
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    margin-bottom: -30px;
+}
+
+.status-tag-line {
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    padding: 4px 8px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.status-tag-line.active {
+    background-color: rgb(12 131 31 / 77%);
+}
+
+.status-tag-line.out-of-stock {
+    background-color: rgb(240 14 14 / 69%);
+}
+.card-border {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.line-through {
+    color: rgb(153, 153, 153);
+    text-decoration: line-through;
+}
+
+.quantity-container {
+    border: 1px solid #dee2e6;
+    padding: 8px 10px;
+    button  {
+        border-right: 1px solid #dee2e6;
+        padding-right: 10px;
+    }
+}

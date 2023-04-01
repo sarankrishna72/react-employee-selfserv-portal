@@ -1,0 +1,13 @@
+.search-box {
+    // border: 1px solid #e8eef3;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 40px;
+    font-size: 12px;
+    box-shadow: var(--default-box-shadow);
+    input,span {
+        padding: 8px 15px;
+        outline: none !important;
+    }
+}
